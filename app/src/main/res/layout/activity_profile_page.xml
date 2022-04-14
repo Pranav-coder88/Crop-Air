@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img"
+        tools:context=".ProfilePage">
+
+
+    <ImageView
+            android:layout_width="124dp"
+            android:layout_height="193dp"
+            app:srcCompat="@drawable/nd2m6os0tmc9env4gc8jh3er0j"
+            android:id="@+id/profilePic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+
+
+            android:contentDescription="@string/profile_pic_image"/>
+    <TextView
+            android:text="@string/admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/profileName"
+            app:layout_constraintEnd_toEndOf="@+id/profilePic" app:layout_constraintStart_toStartOf="@+id/profilePic"
+            app:layout_constraintHorizontal_bias="0.484" app:layout_constraintTop_toBottomOf="@+id/profilePic"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:shadowColor="@color/colorTextPrimary"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+    />
+    <TextView
+            android:text="@string/admin_admin_com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/profileUserName"
+            app:layout_constraintEnd_toEndOf="@+id/profileName" app:layout_constraintStart_toStartOf="@+id/profileName"
+            app:layout_constraintTop_toBottomOf="@+id/profileName"
+            android:shadowColor="@color/colorTextPrimary"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_5sdp"
+    />
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/profileUserName"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:baselineAligned="false">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/screw_driver"
+                        android:id="@+id/screwDriverImage"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:contentDescription="@string/settings_image"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/money"
+                        android:id="@+id/paymentImage"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:contentDescription="@string/payment_image"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/message"
+                        android:id="@+id/notificationsImage"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:contentDescription="@string/notifcation_image"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

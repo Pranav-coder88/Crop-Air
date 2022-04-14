@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+
+        tools:context=".Sign_Up_Page">
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sign_up"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_marginTop="50dp" android:layout_marginStart="50dp" android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+    />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newUserName"
+            android:layout_below="@+id/sign_up"
+            android:hint="@string/user_name"
+            android:textColorHint="@color/black"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="#3fff"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_outline_account_circle_24"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:singleLine="true"
+    />
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newPassword"
+            android:layout_below="@+id/newUserName"
+            android:hint="@string/password"
+            android:textColorHint="@color/black"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="#3fff"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_outline_create_24"
+
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+    />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmPassword"
+            android:layout_below="@+id/newPassword"
+            android:hint="@string/confirm_password"
+            android:textColorHint="@color/black"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="#3fff"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_outline_create_24"
+
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+    />
+
+    <com.google.android.material.button.MaterialButton
+            android:text="@string/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newSubmitButton"
+            android:layout_below="@+id/confirmPassword"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColorHint="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+
+    />
+
+</RelativeLayout>
+

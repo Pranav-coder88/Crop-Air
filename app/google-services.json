@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "850287309293",
+    "firebase_url": "https://crop-air-se-project-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "crop-air-se-project",
+    "storage_bucket": "crop-air-se-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850287309293:android:f6d4c60d66227522d9b7e4",
+        "android_client_info": {
+          "package_name": "airlinereserveationsystem.softwareengenerring.cropair"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "850287309293-pipmuv19t2f2jnh0e4heu40sbf5kh5e0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAShVnl6_piAVLNDJzUhfuVdRZbvhFykys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "850287309293-pipmuv19t2f2jnh0e4heu40sbf5kh5e0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
